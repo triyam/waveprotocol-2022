@@ -6,52 +6,52 @@ const navigation = [
   {
     title: "Dashboard",
     href: "/starter",
-    icon: "bi bi-speedometer2",
+    icon: "bi bi-clipboard-data",
   },
   {
-    title: "Alert",
+    title: "ICO Token Sale",
     href: "/alerts",
-    icon: "bi bi-bell",
+    icon: "bi bi-coin",
   },
   {
-    title: "Badges",
+    title: "Buy Tokens",
     href: "/badges",
     icon: "bi bi-patch-check",
   },
   {
-    title: "Buttons",
+    title: "Withdrawal",
     href: "/buttons",
     icon: "bi bi-hdd-stack",
   },
   {
-    title: "Cards",
+    title: "Transactions",
     href: "/cards",
     icon: "bi bi-card-text",
   },
   {
-    title: "Grid",
+    title: "My Referals",
     href: "/grid",
     icon: "bi bi-columns",
   },
   {
-    title: "Table",
+    title: "Help Desk",
     href: "/table",
     icon: "bi bi-layout-split",
   },
   {
-    title: "Forms",
+    title: "Terms",
     href: "/forms",
     icon: "bi bi-textarea-resize",
   },
   {
-    title: "Breadcrumbs",
+    title: "Admin",
     href: "/breadcrumbs",
-    icon: "bi bi-link",
+    icon: "bi bi-person-bounding-box",
   },
   {
-    title: "About",
+    title: "Log Out",
     href: "/about",
-    icon: "bi bi-people",
+    icon: "bi bi-box-arrow-right",
   },
 ];
 
@@ -89,15 +89,6 @@ const Sidebar = () => {
               </Link>
             </NavItem>
           ))}
-          <Button
-            color="danger"
-            tag="a"
-            target="_blank"
-            className="mt-3"
-            href="https://www.wrappixel.com/templates/ample-react-dashboard/?ref=33"
-          >
-            Upgrade To Pro
-          </Button>
         </Nav>
       </div>
     </div>
