@@ -8,7 +8,7 @@ const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 
 const Starter = lazy(() => import("../views/Starter.js"));
 const About = lazy(() => import("../views/About.js"));
-const Alerts = lazy(() => import("../views/ui/Alerts"));
+const IcoTokenSale = lazy(() => import("../views/ui/IcoTokenSale.js"));
 const Badges = lazy(() => import("../views/ui/Badges"));
 const Buttons = lazy(() => import("../views/ui/Buttons"));
 const Cards = lazy(() => import("../views/ui/Cards"));
@@ -27,7 +27,7 @@ const ThemeRoutes = [
       { path: "/", element: <Navigate to="/starter" /> },
       { path: "/starter", exact: true, element: <Starter /> },
       { path: "/about", exact: true, element: <About /> },
-      { path: "/alerts", exact: true, element: <Alerts /> },
+      { path: "/icotokensale", exact: true, element: <IcoTokenSale /> },
       { path: "/badges", exact: true, element: <Badges /> },
       { path: "/buttons", exact: true, element: <Buttons /> },
       { path: "/cards", exact: true, element: <Cards /> },

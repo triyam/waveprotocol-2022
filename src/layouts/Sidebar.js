@@ -10,7 +10,7 @@ const navigation = [
   },
   {
     title: "ICO Token Sale",
-    href: "/alerts",
+    href: "/icotokensale",
     icon: "bi bi-coin",
   },
   {

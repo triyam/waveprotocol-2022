@@ -58,10 +58,12 @@ const ProjectTables = () => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle tag="h5">Project Listing</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
+          <CardTitle tag="h5">Funding</CardTitle>
+          <CardSubtitle tag="h6">--hello--</CardSubtitle>
+
+          {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
             Overview of the projects
-          </CardSubtitle>
+          </CardSubtitle> */}
 
           <Table className="no-wrap mt-3 align-middle" responsive borderless>
             <thead>
