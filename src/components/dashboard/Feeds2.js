@@ -8,7 +8,11 @@ import {
   ListGroupItem,
   Button,
   CardImg,
-  Progress
+  Progress,
+  Form,
+  FormGroup,
+  Label,
+  Input
 } from "reactstrap";
 
 const FeedData = [
@@ -61,28 +65,36 @@ const Feeds = () => {
     <Card>
       
       <CardBody>
-        <div style={{marginBottom:"5%"}}>
-          <h6>Account Status</h6>
-          <Progress color="danger" value={5} />
-          <h6>Account Balance</h6>
-          <Progress color="danger" value={5} />
-        </div>
         
-        <CardTitle tag="h3">KYC Verification</CardTitle>
+        <CardTitle tag="h4">Referrals</CardTitle>
         {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
           Widget you can use
         </CardSubtitle> */}
-        <CardImg
-      alt="Card image cap"
-      src="https://waveprotocol2021.4v8iau1rta20e.ap-south-1.cs.amazonlightsail.com/static/img/kyc/passportphoto.png"
-      top
-      width="100%"
-    />
-    <CardTitle tag="h5">
-    not_verified
-  </CardTitle>
+        <h5 style={{color:"blue"}}>Refer to your friend & win 10% on 1st deposit done by your referee.</h5>
+        <h6>Maximum $20 equivalent WPFM tokens for refer.</h6>
+
+        <Form>
+              <FormGroup>
+                <Label for="exampleEmail">Email</Label>
+                <Input
+                  id="exampleEmail"
+                  name="email"
+                  placeholder="Enter your email id"
+                  type="email"
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="examplePhone">Phone</Label>
+                <Input
+                  id="examplePhone"
+                  name="phone"
+                  placeholder="Enter your mobile number"
+                  type="number"
+                />
+              </FormGroup>
+              </Form>
   <Button style={{margin:"0", display:"block", width:"100%"}} color="primary">
-        Verify
+        Send Referal
       </Button>
       </CardBody>
     </Card>
