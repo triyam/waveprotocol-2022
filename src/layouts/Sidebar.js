@@ -53,6 +53,11 @@ const navigation = [
     href: "/about",
     icon: "bi bi-box-arrow-right",
   },
+  {
+    title: "Stripe",
+    href: "/payments",
+    icon: "bi bi-coin",
+  },
 ];
 
 const Sidebar = () => {
