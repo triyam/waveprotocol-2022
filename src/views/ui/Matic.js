@@ -51,7 +51,7 @@ const Matic = () => {
             />
           </div>
 
-          <hr className="border-light m-0" />
+          {/* <hr className="border-light m-0" />
           <div className="card-body">
             <div className="form-group">
               <label className="form-label">Username</label>
@@ -90,7 +90,7 @@ const Matic = () => {
                 defaultValue="Company Ltd."
               />
             </div>
-          </div>
+          </div> */}
         </CardBody>
       </Card>
     </div>

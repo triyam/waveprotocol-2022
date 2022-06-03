@@ -6,6 +6,8 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.8.2",
+    "@solana/spl-token": "^0.2.0",
+    "@solana/web3.js": "^1.43.4",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -29,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:lambda": "netlify-lambda build lambdaFunctions --config ./webpack.config.js"
   },
   "eslintConfig": {
     "extends": [
