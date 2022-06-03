@@ -4,7 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Card from './Card';
+import { Col, Row } from "reactstrap";
+import DebitCard from './DebitCard';
 import Matic from './Matic';
 
 function TabPanel(props) {
@@ -56,7 +57,7 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Card/>
+        <DebitCard/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Matic/>
