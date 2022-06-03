@@ -45,12 +45,12 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Sales Summary</CardTitle>
+        <CardTitle tag="h5">WPFM Investment</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
-          Yearly Sales Report
+          WaveProtocol Chart
         </CardSubtitle>
         <Chart
-          type="area"
+          type="line"
           width="100%"
           height="390"
           options={chartoptions.options}

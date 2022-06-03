@@ -1,55 +1,50 @@
 import { Card, CardBody, CardTitle, CardSubtitle, Table } from "reactstrap";
-import user1 from "../../assets/images/users/user1.jpg";
-import user2 from "../../assets/images/users/user2.jpg";
-import user3 from "../../assets/images/users/user3.jpg";
-import user4 from "../../assets/images/users/user4.jpg";
-import user5 from "../../assets/images/users/user5.jpg";
+// import user1 from "../../assets/images/users/user1.jpg";
+// import user2 from "../../assets/images/users/user2.jpg";
+// import user3 from "../../assets/images/users/user3.jpg";
+// import user4 from "../../assets/images/users/user4.jpg";
+// import user5 from "../../assets/images/users/user5.jpg";
 
 const tableData = [
   {
-    avatar: user1,
-    name: "Hanna Gover",
-    email: "hgover@gmail.com",
-    project: "Flexy React",
-    status: "pending",
-    weeks: "35",
-    budget: "95K",
+    sr:1,
+    tokenAvatar: 'https://waveprotocol2021.4v8iau1rta20e.ap-south-1.cs.amazonlightsail.com/static/img/small-logos/btc.png',
+    tokenName: "Bitcoin",
+    investment: "3",
+    purchase:"$50000",
+    current: "$60000",
+    daily: "3%",
+    sevenDays: "5%"
   },
   {
-    avatar: user2,
-    name: "Hanna Gover",
-    email: "hgover@gmail.com",
-    project: "Lading pro React",
-    status: "done",
-    weeks: "35",
-    budget: "95K",
+    sr:2,
+    tokenAvatar: 'https://waveprotocol2021.4v8iau1rta20e.ap-south-1.cs.amazonlightsail.com/static/img/small-logos/eth.png',
+    tokenName: "Etherium",
+    investment: "10",
+    purchase:"$3000",
+    current: "$5000",
+    daily: "-1%",
+    sevenDays: "2%"
   },
   {
-    avatar: user3,
-    name: "Hanna Gover",
-    email: "hgover@gmail.com",
-    project: "Elite React",
-    status: "holt",
-    weeks: "35",
-    budget: "95K",
+    sr:3,
+    tokenAvatar: 'https://waveprotocol2021.4v8iau1rta20e.ap-south-1.cs.amazonlightsail.com/static/img/small-logos/matic.png',
+    tokenName: "Matic",
+    investment: "8",
+    purchase:"$30000",
+    current: "$500",
+    daily: "7%",
+    sevenDays: "12%"
   },
   {
-    avatar: user4,
-    name: "Hanna Gover",
-    email: "hgover@gmail.com",
-    project: "Flexy React",
-    status: "pending",
-    weeks: "35",
-    budget: "95K",
-  },
-  {
-    avatar: user5,
-    name: "Hanna Gover",
-    email: "hgover@gmail.com",
-    project: "Ample React",
-    status: "done",
-    weeks: "35",
-    budget: "95K",
+    sr:4,
+    tokenAvatar: 'https://waveprotocol2021.4v8iau1rta20e.ap-south-1.cs.amazonlightsail.com/static/img/small-logos/shib.png',
+    tokenName: "Shibu.Inc",
+    investment: "12",
+    purchase:"$1000",
+    current: "$8900",
+    daily: "3%",
+    sevenDays: "2%"
   },
 ];
 
@@ -58,8 +53,8 @@ const ProjectTables = () => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle tag="h5">Funding</CardTitle>
-          <CardSubtitle tag="h6">--hello--</CardSubtitle>
+          <CardTitle tag="h5">Price</CardTitle>
+          {/* <CardSubtitle tag="h6">--hello--</CardSubtitle> */}
 
           {/* <CardSubtitle className="mb-2 text-muted" tag="h6">
             Overview of the projects
@@ -67,45 +62,44 @@ const ProjectTables = () => {
 
           <Table className="no-wrap mt-3 align-middle" responsive borderless>
             <thead>
-              <tr>
-                <th>Team Lead</th>
-                <th>Project</th>
+              <tr className="text-center">
+                <th>SR NO</th>
+                <th>TOKEN NAME</th>
 
-                <th>Status</th>
+                <th>INVESTMENT%</th>
 
-                <th>Budget</th>
+                <th>PURCHASE RATE</th>
+                <th>CURRENT RATE</th>
+                <th>DAILY%</th>
+                <th>7 DAYS%</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-center">
               {tableData.map((tdata, index) => (
                 <tr key={index} className="border-top">
+                  <td>{tdata.sr}</td>
                   <td>
                     <div className="d-flex align-items-center p-2">
                       <img
-                        src={tdata.avatar}
+                        src={tdata.tokenAvatar}
                         className="rounded-circle"
-                        alt="avatar"
+                        alt="tokenAvatar"
                         width="45"
                         height="45"
                       />
                       <div className="ms-3">
-                        <h6 className="mb-0">{tdata.name}</h6>
-                        <span className="text-muted">{tdata.email}</span>
+                        <h6 className="mb-0">{tdata.tokenName}</h6>
+                        {/* <span className="text-muted">{tdata.email}</span> */}
                       </div>
                     </div>
                   </td>
-                  <td>{tdata.project}</td>
-                  <td>
-                    {tdata.status === "pending" ? (
-                      <span className="p-2 bg-danger rounded-circle d-inline-block ms-3"></span>
-                    ) : tdata.status === "holt" ? (
-                      <span className="p-2 bg-warning rounded-circle d-inline-block ms-3"></span>
-                    ) : (
-                      <span className="p-2 bg-success rounded-circle d-inline-block ms-3"></span>
-                    )}
-                  </td>
+                  <td>{tdata.investment}</td>
+                  <td>{tdata.purchase}</td>
+                  
 
-                  <td>{tdata.budget}</td>
+                  <td>{tdata.current}</td>
+                  <td>{tdata.daily}</td>
+                  <td>{tdata.sevenDays}</td>
                 </tr>
               ))}
             </tbody>

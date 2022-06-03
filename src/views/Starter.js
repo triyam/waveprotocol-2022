@@ -1,6 +1,7 @@
 import { Col, Row } from "reactstrap";
 import SalesChart from "../components/dashboard/SalesChart";
 import Feeds from "../components/dashboard/Feeds";
+import Feeds2 from "../components/dashboard/Feeds2";
 import ProjectTables from "../components/dashboard/ProjectTable";
 import TopCards from "../components/dashboard/TopCards";
 import Blog from "../components/dashboard/Blog";
@@ -87,12 +88,6 @@ const Starter = () => {
           />
         </Col>
       </Row>
-      {/***Sales & Feed***/}
-      <Row>
-        <Col xxl="12">
-          <SalesChart />
-        </Col>
-      </Row>
       {/***Table ***/}
       <Row>
         <Col lg="7" xxl="8" md="12">
@@ -102,8 +97,17 @@ const Starter = () => {
           <Feeds />
         </Col>
       </Row>
-      {/***Blog Cards***/}
+      {/***Sales & Feed***/}
       <Row>
+      <Col lg="7" xxl="8" md="12">
+          <SalesChart />
+        </Col>
+        <Col md="12" lg="5" xxl="4">
+          <Feeds2 />
+        </Col>
+      </Row>
+      {/***Blog Cards***/}
+      {/* <Row>
         {BlogData.map((blg, index) => (
           <Col sm="6" lg="6" xl="3" key={index}>
             <Blog
@@ -115,8 +119,12 @@ const Starter = () => {
             />
           </Col>
         ))}
-      </Row>
+      </Row> */}
+    <div className="text-center">
+    © 2022 , made by WaveProtocol for a better web.
     </div>
+    </div>
+    
   );
 };
 
