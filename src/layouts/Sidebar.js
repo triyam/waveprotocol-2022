@@ -15,7 +15,7 @@ const navigation = [
   },
   {
     title: "Buy Tokens",
-    href: "/badges",
+    href: "/buytokens",
     icon: "bi bi-patch-check",
   },
   {
